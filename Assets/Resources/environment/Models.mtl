@@ -1,0 +1,1824 @@
+newmtl AppleSG
+illum 4
+Kd 0.26 0.09 0.04
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.26 0.09 0.04
+Ns 23.00
+newmtl AppleSG1
+illum 4
+Kd 0.16 0.53 0.08
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.16 0.53 0.08
+Ns 23.00
+newmtl BarSG
+illum 4
+Kd 0.54 0.46 0.47
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.13 0.12 0.12
+Ns 23.00
+newmtl BarSG1
+illum 4
+Kd 0.12 0.11 0.10
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.03 0.03 0.03
+Ns 23.00
+newmtl Bar_ChairSG
+illum 4
+Kd 0.62 0.62 0.71
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.15 0.16 0.18
+Ns 23.00
+newmtl BathSG
+illum 4
+Kd 0.80 0.80 0.80
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.20 0.20
+Ns 23.00
+newmtl BathSG1
+illum 4
+Kd 0.29 0.51 0.80
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.07 0.13 0.20
+Ns 23.00
+newmtl BedSG
+illum 4
+Kd 0.14 0.08 0.07
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.03 0.02 0.02
+Ns 23.00
+newmtl BedSG1
+illum 4
+Kd 0.80 0.80 0.80
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.20 0.20
+Ns 23.00
+newmtl BedSG2
+illum 4
+Kd 0.33 0.42 0.13
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.08 0.11 0.03
+Ns 23.00
+newmtl Bed_TableSG2
+illum 4
+Kd 0.14 0.08 0.07
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.03 0.02 0.02
+Ns 23.00
+newmtl Bed_TableSG3
+illum 4
+Kd 0.06 0.05 0.05
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.01 0.01 0.01
+Ns 23.00
+newmtl BoatSG
+illum 4
+Kd 0.35 0.16 0.08
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.09 0.04 0.02
+Ns 23.00
+newmtl BoatSG1
+illum 4
+Kd 0.20 0.10 0.07
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.05 0.03 0.02
+Ns 23.00
+newmtl BoatSG2
+illum 4
+Kd 0.68 0.42 0.11
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.17 0.11 0.03
+Ns 23.00
+newmtl Book1SG
+illum 4
+Kd 0.71 0.39 0.04
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.18 0.10 0.01
+Ns 23.00
+newmtl Book1SG1
+illum 4
+Kd 0.64 0.53 0.34
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.16 0.13 0.09
+Ns 23.00
+newmtl Book2SG
+illum 4
+Kd 0.55 0.21 0.07
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.14 0.05 0.02
+Ns 23.00
+newmtl Book2SG1
+illum 4
+Kd 0.64 0.53 0.34
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.16 0.13 0.09
+Ns 23.00
+newmtl Book3SG
+illum 4
+Kd 0.41 0.42 0.64
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.10 0.10 0.16
+Ns 23.00
+newmtl Book3SG1
+illum 4
+Kd 0.64 0.53 0.34
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.16 0.13 0.09
+Ns 23.00
+newmtl Book4SG
+illum 4
+Kd 0.64 0.07 0.04
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.16 0.02 0.01
+Ns 23.00
+newmtl Book4SG1
+illum 4
+Kd 0.64 0.53 0.34
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.16 0.13 0.09
+Ns 23.00
+newmtl BottleSG
+illum 4
+Kd 0.08 0.21 0.08
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.08 0.21 0.08
+Ns 57.78
+newmtl BottleSG1
+illum 4
+Kd 0.37 0.19 0.06
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.37 0.19 0.06
+Ns 23.00
+newmtl Bowl1_1SG
+illum 4
+Kd 0.22 0.21 0.41
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.06 0.05 0.10
+Ns 23.00
+newmtl Box1SG
+illum 4
+Kd 0.80 0.42 0.16
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.10 0.04
+Ns 23.00
+newmtl Bread1SG
+illum 4
+Kd 0.80 0.39 0.13
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.80 0.39 0.13
+Ns 23.00
+newmtl Bread1SG1
+illum 4
+Kd 0.80 0.50 0.26
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.80 0.50 0.26
+Ns 23.00
+newmtl Catpet1SG
+illum 4
+Kd 0.20 0.18 0.14
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.05 0.04 0.04
+Ns 23.00
+newmtl Clock1SG
+illum 4
+Kd 0.20 0.20 0.20
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.05 0.05 0.05
+Ns 23.00
+newmtl Clock1SG1
+illum 4
+Kd 1.00 0.87 0.70
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.25 0.22 0.17
+Ns 23.00
+newmtl Clock2SG
+illum 4
+Kd 0.04 0.04 0.04
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.01 0.01 0.01
+Ns 23.00
+newmtl Clock2SG1
+illum 4
+Kd 0.69 0.64 0.66
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.17 0.16 0.16
+Ns 23.00
+newmtl CupSG
+illum 4
+Kd 0.57 0.57 0.57
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.57 0.57 0.57
+Ns 23.00
+newmtl Curtains1SG
+illum 4
+Kd 0.28 0.20 0.20
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.07 0.05 0.05
+Ns 23.00
+newmtl Curtains1SG1
+illum 4
+Kd 0.80 0.80 0.80
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.20 0.20
+Ns 23.00
+newmtl Curtains1SG2
+illum 4
+Kd 0.36 0.33 0.29
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.09 0.08 0.07
+Ns 23.00
+newmtl Curtains2_1SG
+illum 4
+Kd 0.14 0.19 0.24
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.03 0.05 0.06
+Ns 23.00
+newmtl Curtains2_1SG1
+illum 4
+Kd 0.80 0.64 0.58
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.16 0.14
+Ns 23.00
+newmtl Door1SG
+illum 4
+Kd 0.44 0.25 0.14
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.11 0.06 0.04
+Ns 23.00
+newmtl Door1SG1
+illum 4
+Kd 0.10 0.08 0.08
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.02 0.02 0.02
+Ns 23.00
+newmtl EggSG
+illum 4
+Kd 0.80 0.44 0.07
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.80 0.44 0.07
+Ns 23.00
+newmtl EggSG1
+illum 4
+Kd 1.00 0.98 0.78
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 0.98 0.78
+Ns 23.00
+newmtl Floor1SG
+illum 4
+Kd 0.37 0.25 0.17
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.09 0.06 0.04
+Ns 23.00
+newmtl Floor2SG
+illum 4
+Kd 0.75 0.77 0.69
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.19 0.19 0.17
+Ns 23.00
+newmtl Floor2SG1
+illum 4
+Kd 0.29 0.27 0.26
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.07 0.07 0.07
+Ns 23.00
+newmtl Floor3SG
+illum 4
+Kd 0.21 0.10 0.05
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.05 0.03 0.01
+Ns 23.00
+newmtl Floor3SG1
+illum 4
+Kd 0.30 0.14 0.05
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.08 0.03 0.01
+Ns 23.00
+newmtl Floor4SG
+illum 4
+Kd 0.25 0.12 0.05
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.06 0.03 0.01
+Ns 23.00
+newmtl Floor5_p1SG
+illum 4
+Kd 0.26 0.15 0.10
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.06 0.04 0.02
+Ns 23.00
+newmtl Floor5_p1SG1
+illum 4
+Kd 0.05 0.04 0.03
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.01 0.01 0.01
+Ns 23.00
+newmtl Floor5_p1SG2
+illum 4
+Kd 0.23 0.14 0.09
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.06 0.03 0.02
+Ns 23.00
+newmtl Flower1SG
+illum 4
+Kd 0.52 0.14 0.12
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.13 0.04 0.03
+Ns 23.00
+newmtl Flower1SG1
+illum 4
+Kd 0.11 0.06 0.03
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.03 0.02 0.01
+Ns 23.00
+newmtl Flower1SG2
+illum 4
+Kd 0.31 0.61 0.18
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.08 0.15 0.05
+Ns 23.00
+newmtl Flower2SG
+illum 4
+Kd 0.27 0.16 0.14
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.07 0.04 0.04
+Ns 23.00
+newmtl Flower2SG1
+illum 4
+Kd 0.11 0.06 0.03
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.03 0.02 0.01
+Ns 23.00
+newmtl Flower2SG2
+illum 4
+Kd 0.26 0.61 0.08
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.07 0.15 0.02
+Ns 23.00
+newmtl Flower3SG
+illum 4
+Kd 0.26 0.12 0.03
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.06 0.03 0.01
+Ns 23.00
+newmtl Flower3SG1
+illum 4
+Kd 0.06 0.04 0.01
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.01 0.01 0.00
+Ns 23.00
+newmtl Flower3SG2
+illum 4
+Kd 0.19 0.42 0.11
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.05 0.11 0.03
+Ns 23.00
+newmtl Flower3SG3
+illum 4
+Kd 0.12 0.26 0.07
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.03 0.06 0.02
+Ns 23.00
+newmtl Flower3SG4
+illum 4
+Kd 0.15 0.07 0.02
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.04 0.02 0.01
+Ns 23.00
+newmtl Flower4SG
+illum 4
+Kd 0.20 0.21 0.22
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.05 0.05 0.06
+Ns 23.00
+newmtl Flower4SG1
+illum 4
+Kd 0.06 0.04 0.01
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.01 0.01 0.00
+Ns 23.00
+newmtl Flower4SG2
+illum 4
+Kd 0.18 0.11 0.07
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.04 0.03 0.02
+Ns 23.00
+newmtl Flower4SG3
+illum 4
+Kd 0.16 0.26 0.07
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.04 0.06 0.02
+Ns 23.00
+newmtl Flower5SG
+illum 4
+Kd 0.38 0.13 0.06
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.09 0.03 0.01
+Ns 23.00
+newmtl Flower5SG1
+illum 4
+Kd 0.13 0.09 0.04
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.03 0.02 0.01
+Ns 23.00
+newmtl Flower5SG2
+illum 4
+Kd 0.26 0.36 0.10
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.06 0.09 0.02
+Ns 23.00
+newmtl Flower5SG3
+illum 4
+Kd 0.19 0.29 0.08
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.05 0.07 0.02
+Ns 23.00
+newmtl Flower6SG
+illum 4
+Kd 0.38 0.12 0.07
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.09 0.03 0.02
+Ns 23.00
+newmtl Flower6SG1
+illum 4
+Kd 0.13 0.07 0.02
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.03 0.02 0.01
+Ns 23.00
+newmtl Flower6SG2
+illum 4
+Kd 0.20 0.19 0.06
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.05 0.05 0.02
+Ns 23.00
+newmtl Flower6SG3
+illum 4
+Kd 0.26 0.40 0.10
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.07 0.10 0.02
+Ns 23.00
+newmtl Flower6SG4
+illum 4
+Kd 0.75 0.52 0.32
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.19 0.13 0.08
+Ns 23.00
+newmtl Flower6SG5
+illum 4
+Kd 0.75 0.41 0.02
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.19 0.10 0.01
+Ns 23.00
+newmtl ForkSG
+illum 4
+Kd 0.59 0.66 0.69
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.59 0.66 0.69
+Ns 11.77
+newmtl GlassSG
+illum 4
+Kd 0.80 0.80 0.80
+Ka 0.00 0.00 0.00
+Tf 0.28 0.28 0.28
+Ni 1.00
+Ks 0.20 0.20 0.20
+Ns 23.00
+newmtl GlassToothbrushSG
+illum 4
+Kd 0.53 0.80 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.13 0.20 0.12
+Ns 23.00
+newmtl Hook1SG
+illum 4
+Kd 0.41 0.41 0.41
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.10 0.10 0.10
+Ns 23.00
+newmtl Hook2SG
+illum 4
+Kd 0.33 0.23 0.18
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.08 0.06 0.05
+Ns 23.00
+newmtl House_AngleSG
+illum 4
+Kd 0.12 0.08 0.07
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.03 0.02 0.02
+Ns 23.00
+newmtl Kettle1SG
+illum 4
+Kd 0.65 0.65 0.65
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.16 0.16 0.16
+Ns 23.00
+newmtl Kettle1SG1
+illum 4
+Kd 0.18 0.18 0.18
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.05 0.05 0.05
+Ns 23.00
+newmtl KeyboardSG
+illum 4
+Kd 0.11 0.11 0.11
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.03 0.03 0.03
+Ns 23.00
+newmtl KeyboardSG1
+illum 4
+Kd 0.08 0.08 0.08
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.02 0.02 0.02
+Ns 23.00
+newmtl KitchenDeskSG
+illum 4
+Kd 0.37 0.17 0.07
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.37 0.17 0.07
+Ns 23.00
+newmtl Kitchen_ChairSG
+illum 4
+Kd 0.14 0.07 0.04
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.03 0.02 0.01
+Ns 23.00
+newmtl Kitchen_ChairSG1
+illum 4
+Kd 0.53 0.34 0.20
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.13 0.09 0.05
+Ns 23.00
+newmtl Kitchen_tabletop2SG
+illum 4
+Kd 0.44 0.42 0.42
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.11 0.10 0.11
+Ns 23.00
+newmtl Kitchen_tabletop2SG1
+illum 4
+Kd 0.14 0.13 0.13
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.03 0.03 0.03
+Ns 23.00
+newmtl Kitchen_tabletopSG
+illum 4
+Kd 0.71 0.67 0.68
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.18 0.17 0.17
+Ns 23.00
+newmtl Kitchen_tabletopSG1
+illum 4
+Kd 0.27 0.11 0.03
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.07 0.03 0.01
+Ns 23.00
+newmtl Kitchen_tabletopSG2
+illum 4
+Kd 0.49 0.47 0.47
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.12 0.12 0.12
+Ns 23.00
+newmtl Knife1SG
+illum 4
+Kd 0.46 0.67 0.80
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.46 0.67 0.80
+Ns 37.55
+newmtl Knife1SG1
+illum 4
+Kd 0.22 0.13 0.05
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.22 0.13 0.05
+Ns 23.00
+newmtl Knife2SG
+illum 4
+Kd 0.22 0.13 0.05
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.22 0.13 0.05
+Ns 23.00
+newmtl Knife2SG1
+illum 4
+Kd 0.46 0.67 0.80
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.46 0.67 0.80
+Ns 37.55
+newmtl KubikSG1
+illum 4
+Kd 0.80 0.09 0.17
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.02 0.04
+Ns 23.00
+newmtl KubikSG2
+illum 4
+Kd 0.31 0.18 0.56
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.08 0.05 0.14
+Ns 23.00
+newmtl KubikSG3
+illum 4
+Kd 0.08 0.41 0.80
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.02 0.10 0.20
+Ns 23.00
+newmtl KubikSG4
+illum 4
+Kd 0.30 0.80 0.28
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.08 0.20 0.07
+Ns 23.00
+newmtl KubikSG5
+illum 4
+Kd 0.80 0.71 0.10
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.18 0.03
+Ns 23.00
+newmtl Lamp1SG
+illum 4
+Kd 0.41 0.41 0.41
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.10 0.10 0.10
+Ns 23.00
+newmtl Lamp1SG1
+illum 4
+Kd 1.00 0.41 0.08
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.25 0.10 0.02
+Ns 23.00
+newmtl Lamp1SG2
+illum 4
+Kd 0.19 0.19 0.19
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.05 0.05 0.05
+Ns 23.00
+newmtl Lamp2SG
+illum 4
+Kd 0.23 0.13 0.08
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.06 0.03 0.02
+Ns 23.00
+newmtl Lamp2SG1
+illum 4
+Kd 0.44 0.36 0.36
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.11 0.09 0.09
+Ns 23.00
+newmtl Lamp2SG2
+illum 4
+Kd 0.80 0.33 0.16
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.08 0.04
+Ns 23.00
+newmtl Lamp3SG
+illum 4
+Kd 0.44 0.36 0.36
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.11 0.09 0.09
+Ns 23.00
+newmtl Lamp3SG1
+illum 4
+Kd 0.17 0.15 0.14
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.04 0.04 0.04
+Ns 23.00
+newmtl Lamp3SG2
+illum 4
+Kd 0.80 0.49 0.28
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.12 0.07
+Ns 23.00
+newmtl Lamp4SG
+illum 4
+Kd 0.34 0.17 0.08
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.08 0.04 0.02
+Ns 23.00
+newmtl Lamp4SG1
+illum 4
+Kd 0.80 0.16 0.10
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.04 0.02
+Ns 23.00
+newmtl LibrarySG
+illum 4
+Kd 0.22 0.10 0.05
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.06 0.03 0.01
+Ns 23.00
+newmtl Magnet_for_knifesSG
+illum 4
+Kd 0.50 0.31 0.14
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.12 0.08 0.03
+Ns 23.00
+newmtl Magnet_for_knifesSG1
+illum 4
+Kd 0.72 0.72 0.72
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.18 0.18 0.18
+Ns 23.00
+newmtl MicrovaweSG
+illum 4
+Kd 0.65 0.65 0.65
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.16 0.16 0.16
+Ns 23.00
+newmtl MicrovaweSG1
+illum 4
+Kd 0.34 0.60 0.65
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.09 0.15 0.16
+Ns 23.00
+newmtl MicrovaweSG2
+illum 4
+Kd 0.65 0.30 0.27
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.16 0.08 0.07
+Ns 23.00
+newmtl MicrovaweSG3
+illum 4
+Kd 0.33 0.33 0.33
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.08 0.08 0.08
+Ns 23.00
+newmtl MicrovaweSG4
+illum 4
+Kd 0.47 0.39 0.21
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.12 0.10 0.05
+Ns 23.00
+newmtl MouseSG
+illum 4
+Kd 0.06 0.06 0.06
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.01 0.01 0.01
+Ns 23.00
+newmtl MouseSG1
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.13 0.13 0.13
+Ns 23.00
+newmtl OrangeSG
+illum 4
+Kd 0.16 0.25 0.06
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.16 0.25 0.06
+Ns 23.00
+newmtl OrangeSG1
+illum 4
+Kd 0.80 0.23 0.02
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.80 0.23 0.02
+Ns 23.00
+newmtl OrangeSG2
+illum 4
+Kd 0.31 0.48 0.10
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.31 0.48 0.10
+Ns 23.00
+newmtl OvenSG
+illum 4
+Kd 0.11 0.11 0.10
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.03 0.03 0.02
+Ns 23.00
+newmtl OvenSG1
+illum 4
+Kd 0.57 0.57 0.57
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.14 0.14 0.14
+Ns 23.00
+newmtl OvenSG2
+illum 4
+Kd 0.32 0.32 0.32
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.08 0.08 0.08
+Ns 23.00
+newmtl PCSG
+illum 4
+Kd 0.03 0.03 0.03
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.01 0.01 0.01
+Ns 23.00
+newmtl PCSG1
+illum 4
+Kd 0.80 0.05 0.06
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.01 0.01
+Ns 23.00
+newmtl PC_ScreenSG
+illum 4
+Kd 0.01 0.01 0.01
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 47.49
+newmtl PC_ScreenSG1
+illum 4
+Kd 0.03 0.03 0.03
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.01 0.01 0.01
+Ns 23.00
+newmtl PC_ScreenSG2
+illum 4
+Kd 0.14 0.11 0.11
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.03 0.03 0.03
+Ns 23.00
+newmtl PC_mouseSG
+illum 4
+Kd 0.10 0.10 0.09
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.02 0.02 0.02
+Ns 23.00
+newmtl Pan2SG
+illum 4
+Kd 0.14 0.19 0.23
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.14 0.19 0.23
+Ns 23.00
+newmtl Pan2SG1
+illum 4
+Kd 0.19 0.12 0.07
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.19 0.12 0.07
+Ns 23.00
+newmtl PanSG
+illum 4
+Kd 0.28 0.39 0.46
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.28 0.39 0.46
+Ns 23.00
+newmtl PhotoFrameSG
+illum 4
+Kd 0.39 0.24 0.15
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.10 0.06 0.04
+Ns 23.00
+newmtl PhotoFrameSG1
+illum 4
+Kd 0.35 0.49 0.67
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.09 0.12 0.17
+Ns 23.00
+newmtl Picture1SG
+illum 4
+Kd 0.85 0.79 0.78
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.21 0.20 0.19
+Ns 23.00
+newmtl Picture1SG1
+illum 4
+Kd 0.68 0.29 0.26
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.17 0.07 0.06
+Ns 23.00
+newmtl Picture2FBXASC0451SG
+illum 4
+Kd 0.87 0.80 0.80
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.22 0.20 0.20
+Ns 23.00
+newmtl Picture2FBXASC0451SG1
+illum 4
+Kd 0.84 0.37 0.37
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.21 0.09 0.09
+Ns 23.00
+newmtl Picture2FBXASC0452SG
+illum 4
+Kd 0.68 0.26 0.24
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.17 0.06 0.06
+Ns 23.00
+newmtl Picture2FBXASC0453SG
+illum 4
+Kd 0.84 0.42 0.38
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.21 0.11 0.09
+Ns 23.00
+newmtl Picture3FBXASC0451SG
+illum 4
+Kd 0.85 0.79 0.78
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.21 0.20 0.19
+Ns 23.00
+newmtl Picture3FBXASC0451SG1
+illum 4
+Kd 0.43 0.68 0.53
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.11 0.17 0.13
+Ns 23.00
+newmtl Picture3FBXASC0452SG
+illum 4
+Kd 0.35 0.59 0.60
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.09 0.15 0.15
+Ns 23.00
+newmtl Picture3FBXASC0453SG
+illum 4
+Kd 0.25 0.58 0.28
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.06 0.15 0.07
+Ns 23.00
+newmtl Picture3FBXASC0454SG
+illum 4
+Kd 0.26 0.68 0.46
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.07 0.17 0.11
+Ns 23.00
+newmtl Pillow1SG
+illum 4
+Kd 0.65 0.25 0.17
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.16 0.06 0.04
+Ns 23.00
+newmtl Plate1SG
+illum 4
+Kd 0.70 0.70 0.70
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.70 0.70 0.70
+Ns 23.00
+newmtl Plate2SG
+illum 4
+Kd 0.70 0.70 0.70
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.70 0.70 0.70
+Ns 23.00
+newmtl Plate3SG
+illum 4
+Kd 0.16 0.30 0.53
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.04 0.07 0.13
+Ns 23.00
+newmtl Plate3SG1
+illum 4
+Kd 0.80 0.80 0.80
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.20 0.20
+Ns 23.00
+newmtl Pot1SG
+illum 4
+Kd 0.15 0.23 0.23
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.04 0.06 0.06
+Ns 23.00
+newmtl Pot1SG1
+illum 4
+Kd 0.23 0.10 0.12
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.06 0.03 0.03
+Ns 23.00
+newmtl Pot2SG
+illum 4
+Kd 0.22 0.23 0.11
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.06 0.06 0.03
+Ns 23.00
+newmtl Pot2SG1
+illum 4
+Kd 0.23 0.22 0.20
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.06 0.05 0.05
+Ns 23.00
+newmtl Pot2SG2
+illum 4
+Kd 0.60 0.41 0.31
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.15 0.10 0.08
+Ns 23.00
+newmtl Radiator1SG
+illum 4
+Kd 0.60 0.60 0.60
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.15 0.15 0.15
+Ns 23.00
+newmtl Raling1_1SG
+illum 4
+Kd 0.12 0.08 0.07
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.03 0.02 0.02
+Ns 23.00
+newmtl RangehoodSG
+illum 4
+Kd 0.80 0.80 0.80
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.20 0.20
+Ns 23.00
+newmtl RefrigeratorSG
+illum 4
+Kd 0.45 0.45 0.45
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.11 0.11 0.11
+Ns 23.00
+newmtl RefrigeratorSG1
+illum 4
+Kd 0.28 0.28 0.28
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.07 0.07 0.07
+Ns 23.00
+newmtl RefrigeratorSG2
+illum 4
+Kd 0.84 0.71 0.11
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.21 0.18 0.03
+Ns 23.00
+newmtl RoomTable2SG
+illum 4
+Kd 0.15 0.08 0.04
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.04 0.02 0.01
+Ns 23.00
+newmtl Room_TableSG
+illum 4
+Kd 0.14 0.07 0.04
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.03 0.02 0.01
+Ns 23.00
+newmtl ShowerCarpet2SG
+illum 4
+Kd 0.54 0.18 0.18
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.13 0.04 0.05
+Ns 23.00
+newmtl ShowerCarpet2SG1
+illum 4
+Kd 0.83 0.39 0.37
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.21 0.10 0.09
+Ns 23.00
+newmtl ShowerMirrorSG
+illum 4
+Kd 0.73 0.64 0.71
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.18 0.16 0.18
+Ns 23.00
+newmtl ShowerMirrorSG1
+illum 4
+Kd 0.80 0.80 0.80
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.20 0.20
+Ns 79.00
+newmtl ShowerPart2SG
+illum 4
+Kd 0.66 0.66 0.66
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.16 0.16 0.16
+Ns 23.00
+newmtl ShowerSG
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.13 0.13 0.13
+Ns 23.00
+newmtl ShowerSG1
+illum 4
+Kd 0.60 0.44 0.38
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.15 0.11 0.09
+Ns 23.00
+newmtl ShowerSG2
+illum 4
+Kd 0.80 0.20 0.16
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.05 0.04
+Ns 23.00
+newmtl Shower_tableSG
+illum 4
+Kd 0.31 0.22 0.18
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.08 0.05 0.04
+Ns 23.00
+newmtl Shower_tableSG1
+illum 4
+Kd 0.71 0.68 0.69
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.18 0.17 0.17
+Ns 23.00
+newmtl Shower_tableSG2
+illum 4
+Kd 0.20 0.19 0.19
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.05 0.05 0.05
+Ns 23.00
+newmtl Shower_tableSG3
+illum 4
+Kd 0.55 0.46 0.43
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.14 0.12 0.11
+Ns 23.00
+newmtl SlippersSG
+illum 4
+Kd 0.80 0.80 0.80
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.20 0.20
+Ns 23.00
+newmtl Socket1SG
+illum 4
+Kd 0.67 0.67 0.67
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.17 0.17 0.17
+Ns 23.00
+newmtl Socket1SG1
+illum 4
+Kd 0.21 0.21 0.21
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.05 0.05 0.05
+Ns 23.00
+newmtl Sofa1_1SG
+illum 4
+Kd 0.14 0.07 0.04
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.03 0.02 0.01
+Ns 23.00
+newmtl Sofa1_1SG1
+illum 4
+Kd 0.38 0.27 0.19
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.09 0.07 0.05
+Ns 23.00
+newmtl Sofa2_1SG
+illum 4
+Kd 0.27 0.10 0.06
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.07 0.03 0.01
+Ns 23.00
+newmtl Sofa2_1SG1
+illum 4
+Kd 0.37 0.31 0.25
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.09 0.08 0.06
+Ns 23.00
+newmtl SpoonSG
+illum 4
+Kd 0.59 0.66 0.69
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.59 0.66 0.69
+Ns 11.77
+newmtl SteakSG
+illum 4
+Kd 1.00 0.89 0.82
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 0.89 0.82
+Ns 23.00
+newmtl SteakSG1
+illum 4
+Kd 0.80 0.12 0.09
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.80 0.12 0.09
+Ns 23.00
+newmtl SwitchSG
+illum 4
+Kd 0.80 0.80 0.80
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.20 0.20
+Ns 23.00
+newmtl TVSG
+illum 4
+Kd 0.05 0.05 0.05
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.01 0.01 0.01
+Ns 47.49
+newmtl TVSG1
+illum 4
+Kd 0.19 0.19 0.19
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.05 0.05 0.05
+Ns 23.00
+newmtl TV_RemoteSG
+illum 4
+Kd 0.05 0.05 0.05
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.01 0.01 0.01
+Ns 23.00
+newmtl TV_RemoteSG1
+illum 4
+Kd 0.80 0.13 0.07
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.03 0.02
+Ns 23.00
+newmtl TV_RemoteSG2
+illum 4
+Kd 0.15 0.13 0.13
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.04 0.03 0.03
+Ns 23.00
+newmtl TV_ShelfSG
+illum 4
+Kd 0.15 0.08 0.04
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.04 0.02 0.01
+Ns 23.00
+newmtl TV_Table1SG
+illum 4
+Kd 0.16 0.08 0.04
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.04 0.02 0.01
+Ns 23.00
+newmtl Table1_2SG
+illum 4
+Kd 0.09 0.04 0.02
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.02 0.01 0.01
+Ns 23.00
+newmtl Table2SG
+illum 4
+Kd 0.26 0.12 0.06
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.06 0.03 0.02
+Ns 23.00
+newmtl Table2SG1
+illum 4
+Kd 0.13 0.06 0.03
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.03 0.02 0.01
+Ns 23.00
+newmtl Table2SG2
+illum 4
+Kd 0.40 0.19 0.09
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.10 0.05 0.02
+Ns 23.00
+newmtl Table3SG
+illum 4
+Kd 0.18 0.10 0.05
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.05 0.03 0.01
+Ns 23.00
+newmtl Table3SG1
+illum 4
+Kd 0.09 0.05 0.03
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.02 0.01 0.01
+Ns 23.00
+newmtl TableClothSG
+illum 4
+Kd 0.35 0.38 0.60
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.09 0.10 0.15
+Ns 23.00
+newmtl TableSG
+illum 4
+Kd 0.14 0.06 0.04
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.03 0.02 0.01
+Ns 23.00
+newmtl Table_room2SG
+illum 4
+Kd 0.04 0.04 0.04
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.01 0.01 0.01
+Ns 23.00
+newmtl ToasterSG
+illum 4
+Kd 0.71 0.54 0.56
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.18 0.14 0.14
+Ns 23.00
+newmtl ToasterSG1
+illum 4
+Kd 0.41 0.10 0.09
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.10 0.03 0.02
+Ns 23.00
+newmtl ToasterSG2
+illum 4
+Kd 0.10 0.10 0.10
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.03 0.03 0.03
+Ns 23.00
+newmtl ToiletPaperSG
+illum 4
+Kd 0.79 0.79 0.79
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.20 0.20
+Ns 23.00
+newmtl ToiletPaperSG1
+illum 4
+Kd 0.57 0.57 0.57
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.14 0.14 0.14
+Ns 23.00
+newmtl ToiletSG
+illum 4
+Kd 0.57 0.57 0.57
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.14 0.14 0.14
+Ns 23.00
+newmtl ToiletSG1
+illum 4
+Kd 0.29 0.51 0.80
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.07 0.13 0.20
+Ns 23.00
+newmtl ToiletSG2
+illum 4
+Kd 0.46 0.46 0.46
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.12 0.12 0.12
+Ns 23.00
+newmtl ToothbrushSG
+illum 4
+Kd 0.44 0.49 0.80
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.11 0.12 0.20
+Ns 23.00
+newmtl ToothbrushSG1
+illum 4
+Kd 0.80 0.80 0.75
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.20 0.19
+Ns 23.00
+newmtl Towel1SG
+illum 4
+Kd 0.80 0.80 0.80
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.20 0.20
+Ns 23.00
+newmtl Trash1_1SG
+illum 4
+Kd 0.17 0.17 0.17
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.04 0.04 0.04
+Ns 23.00
+newmtl Wall1_1SG
+illum 4
+Kd 0.12 0.08 0.07
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.03 0.02 0.02
+Ns 23.00
+newmtl Wall1_2SG
+illum 4
+Kd 0.13 0.08 0.05
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.03 0.02 0.01
+Ns 23.00
+newmtl WardrobeSG
+illum 4
+Kd 0.23 0.13 0.08
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.06 0.03 0.02
+Ns 23.00
+newmtl WardrobeSG1
+illum 4
+Kd 0.17 0.13 0.13
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.04 0.03 0.03
+Ns 23.00
+newmtl WardrobeSG2
+illum 4
+Kd 0.26 0.16 0.10
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.06 0.04 0.03
+Ns 23.00
