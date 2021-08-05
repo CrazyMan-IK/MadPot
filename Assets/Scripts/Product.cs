@@ -21,15 +21,5 @@ namespace MadPot
         [SerializeField] private ProductType _type = ProductType.Inedible;
 
         public ProductType Type => _type;
-
-        private void Awake()
-        {
-        
-        }
-
-        private void Update()
-        {
-        
-        }
     }
 }

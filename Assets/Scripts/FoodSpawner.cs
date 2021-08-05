@@ -11,52 +11,51 @@ namespace MadPot
     public class FoodSpawner : MonoBehaviour
     {
         [SerializeField] Transform _productsHolder = null;
-        [SerializeField] ProductsList _products = null;
-        [SerializeField] Rect _spawnRegion = Rect.zero;
 
-        private readonly WaitForSeconds _waitForSeconds = new WaitForSeconds(1.5f);
+        private readonly List<Product> _spawnedProducts = new List<Product>();
 
-        private void Awake()
+        public LevelInformation CurrentLevel { get; set; }
+
+        private void Start()
         {
-            StartCoroutine(Spawn());
+            Spawn();
         }
 
-        private void OnDrawGizmos()
+        public void CompleteLevel()
         {
-            var mainCamera = Camera.main.transform;
-
-            var leftTop = mainCamera.position + mainCamera.forward + mainCamera.right * _spawnRegion.center.x + mainCamera.up * _spawnRegion.center.y;
-            var rightTop = leftTop - mainCamera.right * _spawnRegion.width;
-            var leftBottom = leftTop - mainCamera.up * _spawnRegion.height;
-            var rightBottom = rightTop - mainCamera.up * _spawnRegion.height;
-
-            Gizmos.DrawLine(leftTop, rightTop);
-            Gizmos.DrawLine(rightTop, rightBottom);
-            Gizmos.DrawLine(rightBottom, leftBottom);
-            Gizmos.DrawLine(leftBottom, leftTop);
-        }
-
-        public IEnumerator Spawn()
-        {
-            while (true)
+            foreach (var product in _spawnedProducts)
             {
-                var mainCamera = Camera.main.transform;
-                var leftTop = mainCamera.position + mainCamera.forward + mainCamera.right * _spawnRegion.center.x + mainCamera.up * _spawnRegion.center.y;
-                var rightTop = leftTop - mainCamera.right * _spawnRegion.width;
-                var leftBottom = leftTop - mainCamera.up * _spawnRegion.height;
-                var xAxis = rightTop - leftTop;
-                var zAxis = leftBottom - leftTop;
+                if (product.Type == CurrentLevel.TargetProductsType)
+                {
+                    product.transform.DOScale(Vector3.zero, 3.0f).SetEase(Ease.OutQuart);
+                    product.transform.DOMove(_productsHolder.position, 2.0f).SetEase(Ease.OutQuart);
+                    product.transform.DORotateQuaternion(URandom.rotation, 1.5f).SetEase(Ease.OutQuart);
 
-                var productIndex = URandom.Range(0, _products.Products.Count);
-                var product = Instantiate(_products.Products[productIndex], _productsHolder.position, Quaternion.identity, _productsHolder);
+                    DOTween.To(() => Time.timeScale, x => Time.timeScale = x, 1.0f, 0.1f).SetEase(Ease.Linear);
+                }
+            }
 
-                var targetPoint = leftTop + xAxis * URandom.value + zAxis * URandom.value;
+            _spawnedProducts.Clear();
+        }
 
-                product.DOScale(Vector3.zero, 1.5f).From().SetEase(Ease.OutQuart);
-                product.DOMove(targetPoint, 2.0f).SetEase(Ease.OutQuart);
-                product.DORotateQuaternion(URandom.rotation, 3.0f).SetEase(Ease.OutQuart);
+        private void Spawn()
+        {
+            //var center = Camera.main.transform.position + Camera.main.transform.forward;
 
-                yield return _waitForSeconds;
+            foreach (var levelProduct in CurrentLevel.Products)
+            {
+                var product = Instantiate(levelProduct.Product, _productsHolder.position, Quaternion.identity, _productsHolder);
+                _spawnedProducts.Add(product);
+
+                var targetPosition = levelProduct.GetTargetPosition(Camera.main);
+                //var direction = (targetPosition - center).normalized;
+                var direction = (targetPosition - _productsHolder.position);
+
+                product.transform.DOScale(Vector3.zero, 2.0f).From().SetEase(Ease.OutQuart);
+                product.transform.DOMove(targetPosition + direction * 4, 9.0f).SetEase(Ease.OutQuart);
+                product.transform.DORotateQuaternion(URandom.rotation, 3.0f).SetEase(Ease.OutQuart);
+
+                DOTween.To(() => Time.timeScale, x => Time.timeScale = x, 0.001f, 0.5f).SetEase(Ease.Linear);
             }
         }
     }

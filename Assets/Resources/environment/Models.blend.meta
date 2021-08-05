@@ -3,7 +3,37 @@ guid: ea12cf41a76e2534a83035688f1c48d5
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Apple1_1
+    second: {fileID: 2100000, guid: 6fa9a09a6719bae4fb2bdd7e56a870e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Apple1_2
+    second: {fileID: 2100000, guid: c5e102792a0f72d469abb9bf6dde0f66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Oven1_1
+    second: {fileID: 2100000, guid: 509e4386ed7dade42911bda5dd63c299, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Oven1_2
+    second: {fileID: 2100000, guid: ad1858c7f9d97bb4ebf6862a11d7077b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Oven1_3
+    second: {fileID: 2100000, guid: e97eb2620601509409ae7a76f96b6905, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pan1
+    second: {fileID: 2100000, guid: c9bd6f9df9e04bf4394d311af7777a1b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
