@@ -9,75 +9,46 @@ namespace MadPot
     [CreateAssetMenu(fileName = "New Level", menuName = "Mad Pot/Level", order = 100)]
     public class LevelInformation : ScriptableObject
     {
-        [field: SerializeField] public FigureType TargetFigureType { get; set; } = FigureType.None;
-        [field: SerializeField] public ProductType TargetProductsType { get; set; } = ProductType.Inedible;
-        [field: SerializeField] public List<LevelProduct> Products { get; set; } = new List<LevelProduct>();
+        public event Action CombinationChanged = null;
+
+        [field: SerializeField] public List<Combination> Combinations { get; set; } = new List<Combination>();
+
+        [NonSerialized] private bool _isCompleted = false;
+        [NonSerialized] private int _currentCombination = 0;
+
+        public Combination CurrentCombination => Combinations[_currentCombination];
+        public bool IsCompleted => _isCompleted;
+        
+        public bool IsProductCorrect(Product product)
+        {
+            return CurrentCombination.IsProductCorrect(product);
+        }
 
         public IEnumerable<Vector3> GetTargetPoints(Camera camera)
         {
-            LevelProduct first = null;
-
-            for (int i = 0; i < Products.Count; i++)
-            {
-                var levelProduct = Products[i];
-
-                if (levelProduct.Product == null)
-                {
-                    continue;
-                }
-
-                if (levelProduct.Product.Type != TargetProductsType)
-                {
-                    continue;
-                }
-
-                if (first == null)
-                {
-                    first = levelProduct;
-                }
-
-                yield return levelProduct.GetTargetPosition(camera);
-            }
-
-            if (first != null)
-            {
-                yield return first.GetTargetPosition(camera);
-            }
+            return CurrentCombination.GetTargetPoints(camera);
         }
 
         public IEnumerable<Vector3> GetFailPoints(Camera camera)
         {
-            for (int i = 0; i < Products.Count; i++)
-            {
-                var levelProduct = Products[i];
-
-                if (levelProduct.Product == null)
-                {
-                    continue;
-                }
-
-                if (levelProduct.Product.Type == TargetProductsType)
-                {
-                    continue;
-                }
-
-                yield return levelProduct.GetTargetPosition(camera);
-            }
+            return CurrentCombination.GetFailPoints(camera);
         }
 
         public IEnumerable<Vector3> GetNullPoints(Camera camera)
         {
-            for (int i = 0; i < Products.Count; i++)
+            return CurrentCombination.GetNullPoints(camera);
+        }
+
+        public void CompleteCombination()
+        {
+            if (_currentCombination >= Combinations.Count - 1)
             {
-                var levelProduct = Products[i];
-
-                if (levelProduct.Product != null)
-                {
-                    continue;
-                }
-
-                yield return levelProduct.GetTargetPosition(camera);
+                _isCompleted = true;
+                return;
             }
+
+            _currentCombination++;
+            CombinationChanged?.Invoke();
         }
     }
 }

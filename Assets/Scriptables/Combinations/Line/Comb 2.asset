@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11f5fcf5d262ceb40b3b1252d2ce6d02, type: 3}
+  m_Name: Comb 2
+  m_EditorClassIdentifier: 
+  <TargetFigureType>k__BackingField: 1
+  <TargetProductsType>k__BackingField: 1
+  <Products>k__BackingField:
+  - <Product>k__BackingField: {fileID: 4388609806117142226, guid: 630972ff498610542af1d74ddbe8f82c, type: 3}
+    <Position>k__BackingField: {x: -0.1, y: -0.1}
+  - <Product>k__BackingField: {fileID: 7352488984169811395, guid: 9b89111f76b3af141a94b9a507f9ae7c, type: 3}
+    <Position>k__BackingField: {x: 0.1, y: -0.05}
+  - <Product>k__BackingField: {fileID: -4282203987099076081, guid: 74ebc2492f8c7f14da2049884420bad9, type: 3}
+    <Position>k__BackingField: {x: -0.05, y: 0.15}

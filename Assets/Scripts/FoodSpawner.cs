@@ -25,7 +25,7 @@ namespace MadPot
         {
             foreach (var product in _spawnedProducts)
             {
-                if (product.Type == CurrentLevel.TargetProductsType)
+                if (CurrentLevel.IsProductCorrect(product))
                 {
                     product.transform.DOScale(Vector3.zero, 3.0f).SetEase(Ease.OutQuart);
                     product.transform.DOMove(_productsHolder.position, 2.0f).SetEase(Ease.OutQuart);
@@ -36,13 +36,20 @@ namespace MadPot
             }
 
             _spawnedProducts.Clear();
+
+            CurrentLevel.CompleteCombination();
+
+            if (!CurrentLevel.IsCompleted)
+            {
+                Invoke(nameof(Spawn), 1.5f);
+            }
         }
 
         private void Spawn()
         {
             //var center = Camera.main.transform.position + Camera.main.transform.forward;
 
-            foreach (var levelProduct in CurrentLevel.Products)
+            foreach (var levelProduct in CurrentLevel.CurrentCombination.Products)
             {
                 var product = Instantiate(levelProduct.Product, _productsHolder.position, Quaternion.identity, _productsHolder);
                 _spawnedProducts.Add(product);

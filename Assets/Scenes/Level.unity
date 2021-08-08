@@ -331,7 +331,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 2.257515}
+  m_BoundingSphereOverride: {x: 4.5905e-41, y: -0.00000049178925, z: 4.5905e-41, w: 9.403955e-38}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -656,7 +656,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh20164
+  m_Name: pb_Mesh33968
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1007,7 +1007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9836d40fd4fd1d0419fa9924e9da5101, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _level: {fileID: 11400000, guid: a0a37657160498d4da5505fe682ed561, type: 2}
+  _level: {fileID: 11400000, guid: 0ab821e9bce50ee4980895840dcb091b, type: 2}
   _spawner: {fileID: 1105234105}
   _figureVisualizer: {fileID: 1617636907}
 --- !u!4 &828628542

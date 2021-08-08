@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11f5fcf5d262ceb40b3b1252d2ce6d02, type: 3}
+  m_Name: Combg 3
+  m_EditorClassIdentifier: 
+  <TargetFigureType>k__BackingField: 3
+  <TargetProductsType>k__BackingField: 4
+  <Products>k__BackingField:
+  - <Product>k__BackingField: {fileID: 5615192175255815423, guid: 6e0fbf58c2bb56741b50460a13717199, type: 3}
+    <Position>k__BackingField: {x: 0.05, y: -0.05}
+  - <Product>k__BackingField: {fileID: 974935317494201588, guid: 29c557c14c1200f4bac5cbcf2b9be6ed, type: 3}
+    <Position>k__BackingField: {x: -0.15, y: -0.3}
+  - <Product>k__BackingField: {fileID: -3722923095750602731, guid: ae770329076064a45921e87d7b700a04, type: 3}
+    <Position>k__BackingField: {x: 0.15, y: 0.35}
+  - <Product>k__BackingField: {fileID: 1466306319992453203, guid: f636e4c535d006e45904c3d37414d86e, type: 3}
+    <Position>k__BackingField: {x: -0.15, y: 0.3}
+  - <Product>k__BackingField: {fileID: 5756140786757313935, guid: b2a5121e6aba0914390c277cea664aaa, type: 3}
+    <Position>k__BackingField: {x: -0.15, y: -0.05}
+  - <Product>k__BackingField: {fileID: -2303623352128364750, guid: 15fb4428d9f10a746b5e1245546006da, type: 3}
+    <Position>k__BackingField: {x: 0.15, y: -0.25}
+  - <Product>k__BackingField: {fileID: 6299965248315163784, guid: 91c7f511153903f43b8c5a411fc4e853, type: 3}
+    <Position>k__BackingField: {x: 0.15, y: 0.1}

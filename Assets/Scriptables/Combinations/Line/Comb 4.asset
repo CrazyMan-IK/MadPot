@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11f5fcf5d262ceb40b3b1252d2ce6d02, type: 3}
+  m_Name: Comb 4
+  m_EditorClassIdentifier: 
+  <TargetFigureType>k__BackingField: 1
+  <TargetProductsType>k__BackingField: 1
+  <Products>k__BackingField:
+  - <Product>k__BackingField: {fileID: 3380579731069481147, guid: e1c828ba2f5356c4f9a8108c55b02a32, type: 3}
+    <Position>k__BackingField: {x: -0.15, y: 0.1}
+  - <Product>k__BackingField: {fileID: 537562490454161222, guid: 4a5cf768a002a8445b0ecee0fae671b5, type: 3}
+    <Position>k__BackingField: {x: 0, y: 0.05}
+  - <Product>k__BackingField: {fileID: -3722923095750602731, guid: ae770329076064a45921e87d7b700a04, type: 3}
+    <Position>k__BackingField: {x: 0.15, y: -0.05}
+  - <Product>k__BackingField: {fileID: -8761930767535874699, guid: f13df9fdeb9a7f44184641a923d3efac, type: 3}
+    <Position>k__BackingField: {x: -0.1, y: -0.1}

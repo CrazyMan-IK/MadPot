@@ -14,8 +14,10 @@ namespace MadPot
 
         private void Awake()
         {
-            _figureVisualizer.Type = _level.TargetFigureType;
+            OnLevelCombinationChanged();
             _spawner.CurrentLevel = _level;
+
+            _level.CombinationChanged += OnLevelCombinationChanged;
         }
 
         private void OnDrawGizmos()
@@ -50,6 +52,11 @@ namespace MadPot
             {
                 Gizmos.DrawSphere(point, 0.02f);
             }
+        }
+
+        private void OnLevelCombinationChanged()
+        {
+            _figureVisualizer.Type = _level.CurrentCombination.TargetFigureType;
         }
     }
 }
