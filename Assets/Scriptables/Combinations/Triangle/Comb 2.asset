@@ -12,14 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11f5fcf5d262ceb40b3b1252d2ce6d02, type: 3}
   m_Name: Comb 2
   m_EditorClassIdentifier: 
+  <TutorialBehaviourType>k__BackingField: 0
   <TargetFigureType>k__BackingField: 2
   <TargetProductsType>k__BackingField: 1
   <Products>k__BackingField:
   - <Product>k__BackingField: {fileID: 3380579731069481147, guid: e1c828ba2f5356c4f9a8108c55b02a32, type: 3}
     <Position>k__BackingField: {x: -0.15, y: -0.1}
-  - <Product>k__BackingField: {fileID: 2003776389669794087, guid: e47189dcb6e302140aad76214ff93179, type: 3}
+  - <Product>k__BackingField: {fileID: -211686704848326434, guid: 7ad7b1a58b793d64c802eea2f0d0c6be, type: 3}
     <Position>k__BackingField: {x: 0.15, y: -0.1}
-  - <Product>k__BackingField: {fileID: -1353813615903531701, guid: 2fdd0c257cded7c42be35dcec1122894, type: 3}
+  - <Product>k__BackingField: {fileID: 974935317494201588, guid: 29c557c14c1200f4bac5cbcf2b9be6ed, type: 3}
     <Position>k__BackingField: {x: 0.05, y: 0.2}
-  - <Product>k__BackingField: {fileID: 2201866227655981703, guid: f379cd9a3a5cbab47ae9ee3096e3baac, type: 3}
+  - <Product>k__BackingField: {fileID: 645870782237782919, guid: fd4f0a740f11f0942a6e749e1eb1defe, type: 3}
     <Position>k__BackingField: {x: 0, y: 0}

@@ -13,7 +13,7 @@ namespace MadPot
         void Update()
 		{
 			float designWidth = 1080f;//Wide resolution during development
-			float designHeight = 2246f;//High resolution during development
+			float designHeight = 2400f;//High resolution during development
 			float designFOV = 60f;//Orthogonal camera Size during development
 			float designScale = designWidth / designHeight;
 			float scaleRate = (float)Screen.width / Screen.height;

@@ -12,6 +12,7 @@ namespace MadPot
         public event Action CombinationChanged = null;
 
         [field: SerializeField] public List<Combination> Combinations { get; set; } = new List<Combination>();
+        [field: SerializeField] public LevelInformation NextLevel { get; set; } = null;
 
         [NonSerialized] private bool _isCompleted = false;
         [NonSerialized] private int _currentCombination = 0;
@@ -46,6 +47,9 @@ namespace MadPot
                 _isCompleted = true;
                 return;
             }
+
+            PlayerPrefs.SetInt("tutorial-" + CurrentCombination.TutorialBehaviourType.ToString(), 1);
+            PlayerPrefs.Save();
 
             _currentCombination++;
             CombinationChanged?.Invoke();

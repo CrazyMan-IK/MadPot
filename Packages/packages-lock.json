@@ -1,5 +1,25 @@
 {
   "dependencies": {
+    "com.amplitude.unityplugin": {
+      "version": "https://github.com/amplitude/unity-plugin.git?path=/Assets",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "373610576166fb29bf8c5c452cca105673f6a6b4"
+    },
+    "com.johannesmp.unityscenereference": {
+      "version": "1.1.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
+    "com.unity.2d.sprite": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
     "com.unity.collab-proxy": {
       "version": "1.5.7",
       "depth": 0,

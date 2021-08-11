@@ -3,20 +3,26 @@ using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MadPot.Interfaces;
+using MadPot.Tutorials;
 
 namespace MadPot
 {
     [CreateAssetMenu(fileName = "New Combination", menuName = "Mad Pot/Combination", order = 50)]
     public class Combination : ScriptableObject
     {
+        [field: SerializeField] public TutorialType TutorialBehaviourType { get; set; } = TutorialType.None;
         [field: SerializeField] public FigureType TargetFigureType { get; set; } = FigureType.None;
         [field: SerializeField] public ProductType TargetProductsType { get; set; } = ProductType.Inedible;
         [field: SerializeField] public List<LevelProduct> Products { get; set; } = new List<LevelProduct>();
 
+        private ITutorial _tutorialBehaviour = null;
+
+        public bool IsTutorial => TutorialBehaviourType != TutorialType.None;
+
         public bool IsProductCorrect(Product product)
         {
-            return product.Type == TargetProductsType ||
-                    (TargetProductsType == ProductType.Edible && product.Type != ProductType.Inedible);
+            return product.Type == TargetProductsType || (TargetProductsType == ProductType.Edible && product.Type != ProductType.Inedible);
         }
 
         public IEnumerable<Vector3> GetTargetPoints(Camera camera)
@@ -84,6 +90,47 @@ namespace MadPot
 
                 yield return levelProduct.GetTargetPosition(camera);
             }
+        }
+
+        public IEnumerator StartTutorial(LevelInformation level, TutorialHand hand, TutorialViewer viewer, LineRenderer line)
+        {
+            if (_tutorialBehaviour == null && !PlayerPrefs.HasKey("tutorial-" + TutorialBehaviourType.ToString()))
+            {
+                switch (TutorialBehaviourType)
+                {
+                    case TutorialType.Line:
+                        _tutorialBehaviour = new BaseTutorial()
+                        {
+                            CurrentLevel = level
+                        };
+                        break;
+                    case TutorialType.Triangle:
+                        _tutorialBehaviour = new BaseTutorial()
+                        {
+                            CurrentLevel = level
+                        };
+                        break;
+                    case TutorialType.Rectangle:
+                        _tutorialBehaviour = new BaseTutorial()
+                        {
+                            CurrentLevel = level
+                        };
+                        break;
+                    case TutorialType.Groups:
+                        _tutorialBehaviour = new GroupsTutorial()
+                        {
+                            CurrentLevel = level
+                        };
+                        break;
+                }
+            }
+
+            if (_tutorialBehaviour != null)
+            {
+                yield return _tutorialBehaviour.StartTutorial(hand, viewer, line);
+            }
+
+            yield return null;
         }
     }
 }

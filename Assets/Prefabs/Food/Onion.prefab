@@ -97,6 +97,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _type: 2
+  _minRotation: {x: -180, y: -180, z: -180}
+  _maxRotation: {x: 180, y: 180, z: 180}
 --- !u!114 &1574921587148305253
 MonoBehaviour:
   m_ObjectHideFlags: 0

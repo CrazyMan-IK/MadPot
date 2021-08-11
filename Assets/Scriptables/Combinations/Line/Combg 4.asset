@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11f5fcf5d262ceb40b3b1252d2ce6d02, type: 3}
   m_Name: Combg 4
   m_EditorClassIdentifier: 
+  <TutorialBehaviourType>k__BackingField: 0
   <TargetFigureType>k__BackingField: 1
   <TargetProductsType>k__BackingField: 5
   <Products>k__BackingField:

@@ -54,15 +54,21 @@ namespace MadPot
 
             var result = QPointCloudRecognizer.Classify(candidate, new Gesture[] { target });
 
-            if (result.Distance > 3)
+            if (result.Distance > 7)
             {
                 Debug.LogError($"Cannot recognize gesture - {result.Distance}");
+                _spawner.LevelFail();
                 return;
             }
 
             Debug.Log($"{result.GestureName} - {result.Distance}");
 
-            _spawner.CompleteLevel();
+            var completed = _spawner.LevelComplete();
+
+            if (completed)
+            {
+                gameObject.SetActive(false);
+            }
         }
 
         public void OnInitializePotentialDrag(PointerEventData eventData)

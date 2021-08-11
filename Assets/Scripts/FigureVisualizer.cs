@@ -33,6 +33,7 @@ namespace MadPot
                 {
                     _type = value;
 
+                    gameObject.SetActive(true);
                     switch (_type)
                     {
                         case FigureType.None:
