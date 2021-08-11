@@ -54,5 +54,11 @@ namespace MadPot
             _currentCombination++;
             CombinationChanged?.Invoke();
         }
+
+        public void Reset()
+        {
+            _isCompleted = false;
+            _currentCombination = 0;
+        }
     }
 }

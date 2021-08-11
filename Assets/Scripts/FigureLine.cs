@@ -15,19 +15,33 @@ namespace MadPot
 
         private readonly List<Vector3> _points = new List<Vector3>();
         private LineRenderer _renderer = null;
+        private bool _disabled = true;
 
         private void Awake()
         {
             _renderer = GetComponent<LineRenderer>();
+
+            _spawner.LevelWinned += OnLevelWinned;
+            _spawner.LevelRestarted += OnLevelRestarted;
         }
 
         public void OnBeginDrag(PointerEventData eventData)
         {
+            if (_disabled)
+            {
+                return;
+            }
+
             _points.Clear();
         }
 
         public void OnDrag(PointerEventData eventData)
         {
+            if (_disabled)
+            {
+                return;
+            }
+
             var mainCamera = Camera.main;
 
             //var positionRay = mainCamera.ScreenPointToRay(eventData.position);
@@ -45,7 +59,10 @@ namespace MadPot
 
         public void OnEndDrag(PointerEventData eventData)
         {
-            //return;
+            if (_disabled)
+            {
+                return;
+            }
 
             Gesture target = new Gesture(_spawner.CurrentLevel.GetTargetPoints(Camera.main).Select(p => new Point(p.x, p.y, 0)).ToArray(), "Target");
             Gesture candidate = new Gesture(_points.Select(p => new Point(p.x, p.y, 0)).ToArray());
@@ -62,18 +79,23 @@ namespace MadPot
             }
 
             Debug.Log($"{result.GestureName} - {result.Distance}");
-
-            var completed = _spawner.LevelComplete();
-
-            if (completed)
-            {
-                gameObject.SetActive(false);
-            }
+            
+            _spawner.LevelComplete();
         }
 
         public void OnInitializePotentialDrag(PointerEventData eventData)
         {
             eventData.useDragThreshold = false;
+        }
+
+        private void OnLevelWinned()
+        {
+            _disabled = true;
+        }
+
+        private void OnLevelRestarted()
+        {
+            _disabled = false;
         }
     }
 }

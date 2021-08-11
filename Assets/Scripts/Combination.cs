@@ -18,7 +18,11 @@ namespace MadPot
 
         private ITutorial _tutorialBehaviour = null;
 
+#if UNITY_EDITOR
         public bool IsTutorial => TutorialBehaviourType != TutorialType.None;
+#else
+        public bool IsTutorial => TutorialBehaviourType != TutorialType.None && !PlayerPrefs.HasKey("tutorial-" + TutorialBehaviourType.ToString());
+#endif
 
         public bool IsProductCorrect(Product product)
         {
@@ -94,7 +98,7 @@ namespace MadPot
 
         public IEnumerator StartTutorial(LevelInformation level, TutorialHand hand, TutorialViewer viewer, LineRenderer line)
         {
-            if (_tutorialBehaviour == null && !PlayerPrefs.HasKey("tutorial-" + TutorialBehaviourType.ToString()))
+            if (_tutorialBehaviour == null && IsTutorial)
             {
                 switch (TutorialBehaviourType)
                 {

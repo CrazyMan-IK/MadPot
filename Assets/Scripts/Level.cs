@@ -11,6 +11,9 @@ namespace MadPot
     public class Level : MonoBehaviour
     {
         [SerializeField] private LevelInformation _level = null;
+
+        [Space]
+
         [SerializeField] private FoodSpawner _spawner = null;
         [SerializeField] private FigureVisualizer _figureVisualizer = null;
         [SerializeField] private ProductVisualizer _productVisualizer = null;
@@ -78,7 +81,7 @@ namespace MadPot
         {
             if (Input.GetKeyUp(KeyCode.Escape))
             {
-
+                Application.Quit();
             }
         }
 
@@ -86,12 +89,18 @@ namespace MadPot
         {
             _winUI.DOFade(1.0f, 1.0f);
             _nextLevelButton.onClick.AddListener(NextLevel);
+
+            _winUI.interactable = true;
+            _winUI.blocksRaycasts = true;
         }
 
         private void OnLevelFailed()
         {
             _failUI.DOFade(1.0f, 1.0f);
-            _restartLevelButton.onClick.AddListener(NextLevel);
+            _restartLevelButton.onClick.AddListener(RestartLevel);
+
+            _failUI.interactable = true;
+            _failUI.blocksRaycasts = true;
         }
 
         private void OnLevelCombinationChanged()
@@ -109,12 +118,33 @@ namespace MadPot
 
         public void NextLevel()
         {
+            _level.CombinationChanged -= OnLevelCombinationChanged;
 
+            _level = _level.NextLevel;
+
+            _level.CombinationChanged += OnLevelCombinationChanged;
+
+            _spawner.CurrentLevel = _level;
+            _spawner.RestartGame();
+
+            _winUI.DOFade(0.0f, 1.0f);
+            _nextLevelButton.onClick.RemoveAllListeners();
+
+            _winUI.interactable = false;
+            _winUI.blocksRaycasts = false;
         }
 
         public void RestartLevel()
         {
+            _level.Reset();
 
+            _spawner.RestartGame();
+
+            _failUI.DOFade(0.0f, 1.0f);
+            _restartLevelButton.onClick.RemoveAllListeners();
+
+            _failUI.interactable = false;
+            _failUI.blocksRaycasts = false;
         }
     }
 }

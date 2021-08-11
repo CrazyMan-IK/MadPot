@@ -12,6 +12,7 @@ namespace MadPot
     {
         public event Action LevelWinned = null;
         public event Action LevelFailed = null;
+        public event Action LevelRestarted = null;
 
         [SerializeField] private Transform _productsHolder = null;
         [SerializeField] private Timer _timer = null;
@@ -28,16 +29,14 @@ namespace MadPot
         private void Start()
         {
             _timer.Completed += LevelFail;
-            Invoke(nameof(StartGame), 1.5f);
-
-            _timer.gameObject.SetActive(!CurrentLevel.CurrentCombination.IsTutorial);
+            RestartGame();
         }
 
-        public bool LevelComplete()
+        public void LevelComplete()
         {
             if (_failed)
             {
-                return false;
+                return;
             }
 
             _timer.Pause();
@@ -74,13 +73,11 @@ namespace MadPot
             if (!CurrentLevel.IsCompleted)
             {
                 Invoke(nameof(Spawn), 1.5f);
-                return false;
             }
             else
             {
                 Amplitude.Instance.logEvent("level_win");
                 LevelWinned?.Invoke();
-                return true;
             }
         }
 
@@ -101,6 +98,7 @@ namespace MadPot
                 var direction = (targetPosition - _productsHolder.position);
 
                 product.transform.DOMove(targetPosition + direction * 4, 2.5f).SetEase(Ease.InOutSine).SetUpdate(true);
+                product.transform.DORotateQuaternion(URandom.rotation, 2.0f).SetEase(Ease.OutQuad).SetUpdate(true);
             }
 
             if (_timeScaleTween != null)
@@ -112,6 +110,23 @@ namespace MadPot
 
             Amplitude.Instance.logEvent("level_fail");
             LevelFailed?.Invoke();
+        }
+
+        public void RestartGame()
+        {
+            _failed = false;
+            for (int i = 0; i < _productsHolder.childCount; i++)
+            {
+                Destroy(_productsHolder.GetChild(i).gameObject);
+            }
+
+            _spawnedProducts.Clear();
+
+            Invoke(nameof(StartGame), 1.5f);
+
+            _timer.gameObject.SetActive(!CurrentLevel.CurrentCombination.IsTutorial);
+
+            LevelRestarted?.Invoke();
         }
 
         private void StartGame()
