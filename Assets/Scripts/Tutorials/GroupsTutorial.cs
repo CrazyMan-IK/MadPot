@@ -3,6 +3,7 @@ using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using MadPot.Interfaces;
 
 namespace MadPot.Tutorials
@@ -14,7 +15,7 @@ namespace MadPot.Tutorials
 
         public LevelInformation CurrentLevel { get; set; } = null;
 
-        public IEnumerator StartTutorial(TutorialHand hand, TutorialViewer viewer, LineRenderer line)
+        public IEnumerator StartTutorial(TutorialHand hand, TutorialViewer viewer, TextMeshProUGUI text, LineRenderer line)
         {
             Debug.Log("Groups tutorial started");
 

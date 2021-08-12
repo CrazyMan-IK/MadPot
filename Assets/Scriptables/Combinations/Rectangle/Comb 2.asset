@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11f5fcf5d262ceb40b3b1252d2ce6d02, type: 3}
   m_Name: Comb 2
   m_EditorClassIdentifier: 
+  <TutorialBehaviourType>k__BackingField: 0
   <TargetFigureType>k__BackingField: 3
   <TargetProductsType>k__BackingField: 1
   <Products>k__BackingField:
   - <Product>k__BackingField: {fileID: 3195991761839535893, guid: afd093da25e0a0e458f3bc46d41504ec, type: 3}
     <Position>k__BackingField: {x: 0.15, y: -0.15}
-  - <Product>k__BackingField: {fileID: -8761930767535874699, guid: f13df9fdeb9a7f44184641a923d3efac, type: 3}
+  - <Product>k__BackingField: {fileID: 1640921876812719216, guid: ce546a75b164f9d46929f8e66857916b, type: 3}
     <Position>k__BackingField: {x: -0.15, y: -0.05}
   - <Product>k__BackingField: {fileID: 6017246354208627806, guid: 1a310d5844fd438409d8299a788dc58d, type: 3}
     <Position>k__BackingField: {x: -0.1, y: -0.2}

@@ -36,13 +36,13 @@ namespace MadPot
                         case ProductType.Edible:
                             gameObject.SetActive(false);
                             break;
-                        case ProductType.VegetableOrFruit:
+                        case ProductType.FruitsAndVegetables:
                             _productImage.sprite = _vegetableOrFruitSprite;
                             break;
                         case ProductType.FastFood:
                             _productImage.sprite = _fastFoodSprite;
                             break;
-                        case ProductType.MeatOrFish:
+                        case ProductType.Meat:
                             _productImage.sprite = _meatOrFishSprite;
                             break;
                         case ProductType.Bakery:

@@ -16,6 +16,8 @@ namespace MadPot
             amplitude.logging = true;
             //amplitude.trackSessionEvents(true);
             amplitude.init("b568c487765e41b7b56fb0d556c6c085");
+
+            amplitude.setOnceUserProperty("reg_day", DateTime.Now.ToString("dd.mm.yy"));
         }
     }
 }

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using URandom = UnityEngine.Random;
 using DG.Tweening;
+using TMPro;
 
 namespace MadPot
 {
@@ -16,19 +17,24 @@ namespace MadPot
 
         [SerializeField] private Transform _productsHolder = null;
         [SerializeField] private Timer _timer = null;
+        [SerializeField] private TextMeshProUGUI _levelText = null;
 
         private readonly List<Product> _spawnedProducts = new List<Product>();
         private Tween _timeScaleTween = null;
+        private Coroutine _lastTutorial = null;
         private bool _failed = false;
 
         public LevelInformation CurrentLevel { get; set; }
         public TutorialHand TutorialHand { get; set; }
         public TutorialViewer TutorialViewer { get; set; }
         public LineRenderer TutorialLine { get; set; }
+        public TextMeshProUGUI TutorialText { get; set; }
 
         private void Start()
         {
-            _timer.Completed += LevelFail;
+            Amplitude.Instance.logEvent("game_start");
+
+            //_timer.Completed += LevelFail;
             RestartGame();
         }
 
@@ -114,6 +120,12 @@ namespace MadPot
 
         public void RestartGame()
         {
+            //_levelText.Show("Level " + CurrentLevel.Index);
+            var seq = DOTween.Sequence().SetUpdate(true);
+            seq.Append(_levelText.rectTransform.DOAnchorPosX(0, 2).From(_levelText.rectTransform.anchoredPosition + Vector2.left * 2000).SetUpdate(true));
+            seq.Append(_levelText.rectTransform.DOAnchorPosX(2000, 2).SetUpdate(true));
+            _levelText.text = "Level " + CurrentLevel.Index;
+
             _failed = false;
             for (int i = 0; i < _productsHolder.childCount; i++)
             {
@@ -124,7 +136,8 @@ namespace MadPot
 
             Invoke(nameof(StartGame), 1.5f);
 
-            _timer.gameObject.SetActive(!CurrentLevel.CurrentCombination.IsTutorial);
+            //_timer.gameObject.SetActive(!CurrentLevel.CurrentCombination.IsTutorial);
+            _timer.gameObject.SetActive(false);
 
             LevelRestarted?.Invoke();
         }
@@ -132,7 +145,14 @@ namespace MadPot
         private void StartGame()
         {
             Amplitude.Instance.logEvent("level_start");
-            StartCoroutine(CurrentLevel.CurrentCombination.StartTutorial(CurrentLevel, TutorialHand, TutorialViewer, TutorialLine));
+
+            if (_lastTutorial != null)
+            {
+                StopCoroutine(_lastTutorial);
+            }
+            
+            _lastTutorial = StartCoroutine(CurrentLevel.CurrentCombination.StartTutorial(CurrentLevel, TutorialHand, TutorialViewer, TutorialText, TutorialLine));
+
             Spawn();
         }
 
@@ -141,6 +161,17 @@ namespace MadPot
             if (_failed)
             {
                 return;
+            }
+
+#if !UNITY_EDITOR || DISABLE_EDITOR_RESTRICTIONS
+            if (PlayerPrefs.HasKey("product-" + CurrentLevel.CurrentCombination.TargetProductsType.ToString()))
+#endif
+            if (CurrentLevel.CurrentCombination.TargetProductsType != ProductType.Edible)
+            {
+                TutorialText.gameObject.SetActive(true);
+                TutorialText.text = "Only " + System.Text.RegularExpressions.Regex.Replace(CurrentLevel.CurrentCombination.TargetProductsType.ToString(), @"([a-z])([A-Z])", "$1 $2").ToLower();
+
+                PlayerPrefs.SetInt("product-" + CurrentLevel.CurrentCombination.TargetProductsType.ToString(), 1);
             }
 
             foreach (var levelProduct in CurrentLevel.CurrentCombination.Products)
@@ -158,13 +189,13 @@ namespace MadPot
                 //product.transform.DOMove(targetPosition + direction * 4, 9.0f).SetEase(Ease.OutQuart);
                 product.transform.DOMove(targetPosition, 2.5f).SetEase(Ease.OutQuart).SetUpdate(true);
                 //product.transform.DORotateQuaternion(URandom.rotation, 3.0f).SetEase(Ease.OutQuart);
-                product.transform.DORotateQuaternion(targetRotation, 2.5f).SetEase(Ease.OutQuart).SetUpdate(true);
+                //product.transform.DORotateQuaternion(targetRotation, 2.5f).SetEase(Ease.OutQuart).SetUpdate(true);
             }
 
             _timeScaleTween = DOTween.To(() => Time.timeScale, x => Time.timeScale = x, 0, 2.5f).SetEase(Ease.OutQuart).SetUpdate(true);
 
             _timer.Restart();
-            _timer.gameObject.SetActive(!CurrentLevel.CurrentCombination.IsTutorial);
+            //_timer.gameObject.SetActive(!CurrentLevel.CurrentCombination.IsTutorial);
         }
     }
 }

@@ -13,6 +13,7 @@ namespace MadPot
 
         [field: SerializeField] public List<Combination> Combinations { get; set; } = new List<Combination>();
         [field: SerializeField] public LevelInformation NextLevel { get; set; } = null;
+        [field: SerializeField] public int Index { get; private set; } = 0;
 
         [NonSerialized] private bool _isCompleted = false;
         [NonSerialized] private int _currentCombination = 0;

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using MadPot.Interfaces;
 using MadPot.Tutorials;
+using TMPro;
 
 namespace MadPot
 {
@@ -18,7 +19,7 @@ namespace MadPot
 
         private ITutorial _tutorialBehaviour = null;
 
-#if UNITY_EDITOR
+#if UNITY_EDITOR && !DISABLE_EDITOR_RESTRICTIONS
         public bool IsTutorial => TutorialBehaviourType != TutorialType.None;
 #else
         public bool IsTutorial => TutorialBehaviourType != TutorialType.None && !PlayerPrefs.HasKey("tutorial-" + TutorialBehaviourType.ToString());
@@ -96,7 +97,7 @@ namespace MadPot
             }
         }
 
-        public IEnumerator StartTutorial(LevelInformation level, TutorialHand hand, TutorialViewer viewer, LineRenderer line)
+        public IEnumerator StartTutorial(LevelInformation level, TutorialHand hand, TutorialViewer viewer, TextMeshProUGUI text, LineRenderer line)
         {
             if (_tutorialBehaviour == null && IsTutorial)
             {
@@ -131,7 +132,7 @@ namespace MadPot
 
             if (_tutorialBehaviour != null)
             {
-                yield return _tutorialBehaviour.StartTutorial(hand, viewer, line);
+                yield return _tutorialBehaviour.StartTutorial(hand, viewer, text, line);
             }
 
             yield return null;

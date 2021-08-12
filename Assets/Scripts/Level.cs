@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using TMPro;
 
 namespace MadPot
 {
@@ -20,6 +21,7 @@ namespace MadPot
         [SerializeField] private TutorialHand _hand = null;
         [SerializeField] private TutorialViewer _viewer = null;
         [SerializeField] private LineRenderer _tutorialLine = null;
+        [SerializeField] private TextMeshProUGUI _tutorialText = null;
 
         [Space]
 
@@ -29,6 +31,8 @@ namespace MadPot
         [SerializeField] private Button _nextLevelButton = null;
         [SerializeField] private Button _restartLevelButton = null;
 
+        [SerializeField] private ParticleSystem _winParticles = null;
+
         private void Awake()
         {
             OnLevelCombinationChanged();
@@ -36,6 +40,7 @@ namespace MadPot
             _spawner.TutorialHand = _hand;
             _spawner.TutorialViewer = _viewer;
             _spawner.TutorialLine = _tutorialLine;
+            _spawner.TutorialText = _tutorialText;
 
             _spawner.LevelWinned += OnLevelWinned;
             _spawner.LevelFailed += OnLevelFailed;
@@ -87,6 +92,8 @@ namespace MadPot
 
         private void OnLevelWinned()
         {
+            _winParticles.Play();
+
             _winUI.DOFade(1.0f, 1.0f);
             _nextLevelButton.onClick.AddListener(NextLevel);
 
@@ -114,6 +121,7 @@ namespace MadPot
             _hand.gameObject.SetActive(_level.CurrentCombination.IsTutorial);
             _viewer.gameObject.SetActive(_level.CurrentCombination.IsTutorial);
             _tutorialLine.gameObject.SetActive(_level.CurrentCombination.IsTutorial);
+            _tutorialText.gameObject.SetActive(false);
         }
 
         public void NextLevel()
@@ -121,6 +129,7 @@ namespace MadPot
             _level.CombinationChanged -= OnLevelCombinationChanged;
 
             _level = _level.NextLevel;
+            OnLevelCombinationChanged();
 
             _level.CombinationChanged += OnLevelCombinationChanged;
 
@@ -137,6 +146,7 @@ namespace MadPot
         public void RestartLevel()
         {
             _level.Reset();
+            OnLevelCombinationChanged();
 
             _spawner.RestartGame();
 
