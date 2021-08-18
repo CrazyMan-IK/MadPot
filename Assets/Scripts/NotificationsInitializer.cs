@@ -9,7 +9,7 @@ namespace MadPot
 {
     public static class NotificationsInitializer
     {
-        private const int _notificationID = 23451;
+        private const int NotificationID = 23451;
 
         [RuntimeInitializeOnLoadMethod]
         private static void Initialize()
@@ -21,17 +21,18 @@ namespace MadPot
                 Amplitude.Instance.logEvent("notification_clicked");
             }
 
-            var status = AndroidNotificationCenter.CheckScheduledNotificationStatus(_notificationID);
+            var status = AndroidNotificationCenter.CheckScheduledNotificationStatus(NotificationID);
 
             if (status == NotificationStatus.Unknown)
             {
+                var now = DateTime.Now;
                 var notification = new AndroidNotification();
-                notification.Title = "Lorem";
-                notification.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet enim ac magna imperdiet dignissim. Vestibulum a lectus a nisi tincidunt congue.";
-                notification.FireTime = DateTime.Now.AddDays(1);
+                notification.Title = "Mad Pot";
+                notification.Text = "A juicy burger is waiting for you! \ud83c\udf54";
+                notification.FireTime = new DateTime(now.Year, now.Month, now.Day, 20, 0, 0, DateTimeKind.Local);
                 notification.RepeatInterval = new TimeSpan(24, 0, 0);
 
-                AndroidNotificationCenter.SendNotificationWithExplicitID(notification, "Main", _notificationID);
+                AndroidNotificationCenter.SendNotificationWithExplicitID(notification, "Main", NotificationID);
             }
         }
     }

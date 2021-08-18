@@ -19,6 +19,7 @@ namespace MadPot.Interfaces
     public interface ITutorial
     {
         LevelInformation CurrentLevel { get; set; }
+        int CurrentLevelIndex { get; set; }
 
         IEnumerator StartTutorial(TutorialHand hand, TutorialViewer viewer, TextMeshProUGUI text, LineRenderer line);
     }

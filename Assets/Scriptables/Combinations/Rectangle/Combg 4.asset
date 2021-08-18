@@ -12,20 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11f5fcf5d262ceb40b3b1252d2ce6d02, type: 3}
   m_Name: Combg 4
   m_EditorClassIdentifier: 
+  <TutorialBehaviourType>k__BackingField: 0
   <TargetFigureType>k__BackingField: 3
   <TargetProductsType>k__BackingField: 3
   <Products>k__BackingField:
-  - <Product>k__BackingField: {fileID: 7154700097245979922, guid: 912b8a62787001841b3f9ddb43e9414c, type: 3}
+  - <Product>k__BackingField: {fileID: 3860814344593135472, guid: 61029907afd81904d95ae0e294d622e3, type: 3}
     <Position>k__BackingField: {x: 0, y: 0}
-  - <Product>k__BackingField: {fileID: -4282203987099076081, guid: 74ebc2492f8c7f14da2049884420bad9, type: 3}
+  - <Product>k__BackingField: {fileID: -1875174565015931081, guid: f0ca15438794aad419985b0479f444e3, type: 3}
     <Position>k__BackingField: {x: -0.15, y: -0.25}
-  - <Product>k__BackingField: {fileID: -5152115177323809402, guid: 2e390425df99d034aa06b93a33b9d184, type: 3}
+  - <Product>k__BackingField: {fileID: -7308436608753308246, guid: 2ee0ee0a9ee4a694d9f42fea4927e45e, type: 3}
     <Position>k__BackingField: {x: -0.15, y: 0.3}
-  - <Product>k__BackingField: {fileID: 7832439255634448629, guid: 18d502adc70baf748aa5bfc87c692124, type: 3}
+  - <Product>k__BackingField: {fileID: 4083159625924280437, guid: 12fc5968516d49443a9cfdd17c633882, type: 3}
     <Position>k__BackingField: {x: -0.15, y: 0.1}
-  - <Product>k__BackingField: {fileID: 2003776389669794087, guid: e47189dcb6e302140aad76214ff93179, type: 3}
+  - <Product>k__BackingField: {fileID: -1459205155933695587, guid: 577e14396dd6b4c4b9f0a41c3c3b4ea7, type: 3}
     <Position>k__BackingField: {x: 0, y: -0.25}
-  - <Product>k__BackingField: {fileID: -1353813615903531701, guid: 2fdd0c257cded7c42be35dcec1122894, type: 3}
+  - <Product>k__BackingField: {fileID: -4715983128889572495, guid: 6888ec727d577364c82a33e408910ce0, type: 3}
     <Position>k__BackingField: {x: 0.15, y: -0.1}
-  - <Product>k__BackingField: {fileID: 2201866227655981703, guid: f379cd9a3a5cbab47ae9ee3096e3baac, type: 3}
+  - <Product>k__BackingField: {fileID: 2089237182460532213, guid: 1be183fa83126a141b44a3984446f805, type: 3}
     <Position>k__BackingField: {x: 0.125, y: 0.2}

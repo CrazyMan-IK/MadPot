@@ -97,41 +97,32 @@ namespace MadPot
             }
         }
 
-        public IEnumerator StartTutorial(LevelInformation level, TutorialHand hand, TutorialViewer viewer, TextMeshProUGUI text, LineRenderer line)
+        public IEnumerator StartTutorial(LevelInformation level, int levelIndex, TutorialHand hand, TutorialViewer viewer, TextMeshProUGUI text, LineRenderer line)
         {
             if (_tutorialBehaviour == null && IsTutorial)
             {
                 switch (TutorialBehaviourType)
                 {
                     case TutorialType.Line:
-                        _tutorialBehaviour = new BaseTutorial()
-                        {
-                            CurrentLevel = level
-                        };
+                        _tutorialBehaviour = new BaseTutorial();
                         break;
                     case TutorialType.Triangle:
-                        _tutorialBehaviour = new BaseTutorial()
-                        {
-                            CurrentLevel = level
-                        };
+                        _tutorialBehaviour = new BaseTutorial();
                         break;
                     case TutorialType.Rectangle:
-                        _tutorialBehaviour = new BaseTutorial()
-                        {
-                            CurrentLevel = level
-                        };
+                        _tutorialBehaviour = new BaseTutorial();
                         break;
                     case TutorialType.Groups:
-                        _tutorialBehaviour = new GroupsTutorial()
-                        {
-                            CurrentLevel = level
-                        };
+                        _tutorialBehaviour = new GroupsTutorial();
                         break;
                 }
             }
 
             if (_tutorialBehaviour != null)
             {
+                _tutorialBehaviour.CurrentLevel = level;
+                _tutorialBehaviour.CurrentLevelIndex = levelIndex;
+
                 yield return _tutorialBehaviour.StartTutorial(hand, viewer, text, line);
             }
 

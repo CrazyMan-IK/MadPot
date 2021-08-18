@@ -16,13 +16,13 @@ MonoBehaviour:
   <TargetFigureType>k__BackingField: 1
   <TargetProductsType>k__BackingField: 3
   <Products>k__BackingField:
-  - <Product>k__BackingField: {fileID: -5169525326672498970, guid: 957a7936cb4f3d048af8109bea23b4ad, type: 3}
+  - <Product>k__BackingField: {fileID: 4637132003195720537, guid: 16d277757ec5cbe4c8ef8af17cab27bd, type: 3}
     <Position>k__BackingField: {x: 0.1, y: 0.15}
-  - <Product>k__BackingField: {fileID: 8992152001675973537, guid: 22c2075f9a5975f44ad3ae82c98bd0d1, type: 3}
+  - <Product>k__BackingField: {fileID: -62495303720377172, guid: 26a68f88597076449b42bac775ea8659, type: 3}
     <Position>k__BackingField: {x: -0.15, y: 0.05}
-  - <Product>k__BackingField: {fileID: -6583822272322454649, guid: 1656f1c7db1709d41ad0768f8581fa15, type: 3}
+  - <Product>k__BackingField: {fileID: -5149628133590210626, guid: f46178786b685ff40bda9983b6dc7d30, type: 3}
     <Position>k__BackingField: {x: 0, y: 0}
-  - <Product>k__BackingField: {fileID: 5615192175255815423, guid: 6e0fbf58c2bb56741b50460a13717199, type: 3}
+  - <Product>k__BackingField: {fileID: 5152926622895458375, guid: 28339fa0bc895a445afbf675aa984dfa, type: 3}
     <Position>k__BackingField: {x: -0.15, y: -0.15}
-  - <Product>k__BackingField: {fileID: 4233049820932738434, guid: d3d89ce879092304e9d29d5d765d15a0, type: 3}
+  - <Product>k__BackingField: {fileID: -1459205155933695587, guid: 577e14396dd6b4c4b9f0a41c3c3b4ea7, type: 3}
     <Position>k__BackingField: {x: 0.15, y: -0.05}

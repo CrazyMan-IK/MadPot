@@ -14,6 +14,7 @@ namespace MadPot.Tutorials
         private int _currentPoint = 0;
 
         public LevelInformation CurrentLevel { get; set; } = null;
+        public int CurrentLevelIndex { get; set; } = 0;
 
         public IEnumerator StartTutorial(TutorialHand hand, TutorialViewer viewer, TextMeshProUGUI text, LineRenderer line)
         {

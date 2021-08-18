@@ -25,6 +25,7 @@ namespace MadPot
         private bool _failed = false;
 
         public LevelInformation CurrentLevel { get; set; }
+        public int CurrentLevelIndex { get; set; }
         public TutorialHand TutorialHand { get; set; }
         public TutorialViewer TutorialViewer { get; set; }
         public LineRenderer TutorialLine { get; set; }
@@ -36,6 +37,14 @@ namespace MadPot
 
             //_timer.Completed += LevelFail;
             RestartGame();
+        }
+
+        public void HideAllOutlines()
+        {
+            foreach (var product in _spawnedProducts)
+            {
+                product.HideOutline();
+            }
         }
 
         public void LevelComplete()
@@ -124,7 +133,7 @@ namespace MadPot
             var seq = DOTween.Sequence().SetUpdate(true);
             seq.Append(_levelText.rectTransform.DOAnchorPosX(0, 2).From(_levelText.rectTransform.anchoredPosition + Vector2.left * 2000).SetUpdate(true));
             seq.Append(_levelText.rectTransform.DOAnchorPosX(2000, 2).SetUpdate(true));
-            _levelText.text = "Level " + CurrentLevel.Index;
+            _levelText.text = "Level " + CurrentLevelIndex;
 
             _failed = false;
             for (int i = 0; i < _productsHolder.childCount; i++)
@@ -151,7 +160,7 @@ namespace MadPot
                 StopCoroutine(_lastTutorial);
             }
             
-            _lastTutorial = StartCoroutine(CurrentLevel.CurrentCombination.StartTutorial(CurrentLevel, TutorialHand, TutorialViewer, TutorialText, TutorialLine));
+            _lastTutorial = StartCoroutine(CurrentLevel.CurrentCombination.StartTutorial(CurrentLevel, CurrentLevelIndex, TutorialHand, TutorialViewer, TutorialText, TutorialLine));
 
             Spawn();
         }
@@ -177,6 +186,7 @@ namespace MadPot
             foreach (var levelProduct in CurrentLevel.CurrentCombination.Products)
             {
                 var product = Instantiate(levelProduct.Product, _productsHolder.position, Quaternion.identity, _productsHolder);
+                product.SetOutlineColor(CurrentLevel.IsProductCorrect(product) ? Color.white : Color.red);
                 _spawnedProducts.Add(product);
 
                 var targetPosition = levelProduct.GetTargetPosition(Camera.main);

@@ -33,10 +33,15 @@ namespace MadPot
 
         [SerializeField] private ParticleSystem _winParticles = null;
 
+        public int CurrentLevel { get; private set; } = 1;
+
         private void Awake()
         {
+            CurrentLevel = _level.Index;
+
             OnLevelCombinationChanged();
             _spawner.CurrentLevel = _level;
+            _spawner.CurrentLevelIndex = CurrentLevel;
             _spawner.TutorialHand = _hand;
             _spawner.TutorialViewer = _viewer;
             _spawner.TutorialLine = _tutorialLine;
@@ -129,11 +134,13 @@ namespace MadPot
             _level.CombinationChanged -= OnLevelCombinationChanged;
 
             _level = _level.NextLevel;
+            CurrentLevel++;
             OnLevelCombinationChanged();
 
             _level.CombinationChanged += OnLevelCombinationChanged;
 
             _spawner.CurrentLevel = _level;
+            _spawner.CurrentLevelIndex = CurrentLevel;
             _spawner.RestartGame();
 
             _winUI.DOFade(0.0f, 1.0f);

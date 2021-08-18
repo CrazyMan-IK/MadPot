@@ -12,18 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11f5fcf5d262ceb40b3b1252d2ce6d02, type: 3}
   m_Name: Combg 2
   m_EditorClassIdentifier: 
+  <TutorialBehaviourType>k__BackingField: 0
   <TargetFigureType>k__BackingField: 2
   <TargetProductsType>k__BackingField: 3
   <Products>k__BackingField:
-  - <Product>k__BackingField: {fileID: 7154700097245979922, guid: 912b8a62787001841b3f9ddb43e9414c, type: 3}
+  - <Product>k__BackingField: {fileID: -1024405254133375017, guid: 2b1058b6e70029646b09d964071d7c7f, type: 3}
     <Position>k__BackingField: {x: -0.15, y: 0.1}
-  - <Product>k__BackingField: {fileID: -2303623352128364750, guid: 15fb4428d9f10a746b5e1245546006da, type: 3}
+  - <Product>k__BackingField: {fileID: 790498458868711411, guid: 51096b979114c8b41a155cf21fb358f6, type: 3}
     <Position>k__BackingField: {x: 0.05, y: -0.025}
-  - <Product>k__BackingField: {fileID: 5502663728481875475, guid: e88250af06c155d41a41e124c183299f, type: 3}
+  - <Product>k__BackingField: {fileID: -1653210408061401155, guid: 7a1a1a8eb7c12d74fa6c4b634f218179, type: 3}
     <Position>k__BackingField: {x: 0.2, y: 0.1}
-  - <Product>k__BackingField: {fileID: 2003776389669794087, guid: e47189dcb6e302140aad76214ff93179, type: 3}
+  - <Product>k__BackingField: {fileID: 8866872591501477338, guid: aa740710a8c05d542b166062fbb4095d, type: 3}
     <Position>k__BackingField: {x: 0.2, y: -0.1}
-  - <Product>k__BackingField: {fileID: -1353813615903531701, guid: 2fdd0c257cded7c42be35dcec1122894, type: 3}
+  - <Product>k__BackingField: {fileID: 2585248675962110311, guid: 066a57ddb9f7e6144aad11a697abb866, type: 3}
     <Position>k__BackingField: {x: 0, y: 0.15}
-  - <Product>k__BackingField: {fileID: 2201866227655981703, guid: f379cd9a3a5cbab47ae9ee3096e3baac, type: 3}
+  - <Product>k__BackingField: {fileID: -1459205155933695587, guid: 577e14396dd6b4c4b9f0a41c3c3b4ea7, type: 3}
     <Position>k__BackingField: {x: -0.1, y: -0.1}

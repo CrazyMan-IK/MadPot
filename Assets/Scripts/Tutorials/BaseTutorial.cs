@@ -14,6 +14,7 @@ namespace MadPot.Tutorials
         private int _currentPoint = 0;
 
         public LevelInformation CurrentLevel { get; set; } = null;
+        public int CurrentLevelIndex { get; set; } = 0;
 
         public IEnumerator StartTutorial(TutorialHand hand, TutorialViewer viewer, TextMeshProUGUI text, LineRenderer line)
         {
@@ -22,7 +23,7 @@ namespace MadPot.Tutorials
             hand.gameObject.SetActive(true);
             viewer.gameObject.SetActive(true);
 
-            if (CurrentLevel.Index == 1)
+            if (CurrentLevelIndex == 1)
             {
                 text.gameObject.SetActive(true);
             }
