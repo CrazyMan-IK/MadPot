@@ -20,7 +20,7 @@ namespace MadPot
     [RequireComponent(typeof(Outline))]
     public class Product : MonoBehaviour
     {
-        private const float RotationSpeed = 180;
+        private const float RotationSpeed = 140;
         private const float AccelerationSpeed = 2;
         private const float RotationTimer = 2;
 

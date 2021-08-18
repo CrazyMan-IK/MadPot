@@ -39,6 +39,15 @@ namespace MadPot
         {
             CurrentLevel = _level.Index;
 
+#if !UNITY_EDITOR || DISABLE_EDITOR_RESTRICTIONS
+            var savedLevelIndex = PlayerPrefs.GetInt("current-level", -1);
+            while (CurrentLevel < savedLevelIndex)
+            {
+                _level = _level.NextLevel;
+                CurrentLevel++;
+            }
+#endif
+
             OnLevelCombinationChanged();
             _spawner.CurrentLevel = _level;
             _spawner.CurrentLevelIndex = CurrentLevel;
@@ -55,6 +64,11 @@ namespace MadPot
 
         private void OnDrawGizmos()
         {
+            if (Camera.current != Camera.main)
+            {
+                return;
+            }
+
             var points = _level.GetTargetPoints(Camera.main).ToList();
             var failPoints = _level.GetFailPoints(Camera.main).ToList();
             var nullPoints = _level.GetNullPoints(Camera.main).ToList();
@@ -136,6 +150,8 @@ namespace MadPot
             _level = _level.NextLevel;
             CurrentLevel++;
             OnLevelCombinationChanged();
+
+            PlayerPrefs.SetInt("current-level", CurrentLevel);
 
             _level.CombinationChanged += OnLevelCombinationChanged;
 

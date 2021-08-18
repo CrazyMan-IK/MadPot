@@ -12,6 +12,7 @@ namespace MadPot
     [CreateAssetMenu(fileName = "New Combination", menuName = "Mad Pot/Combination", order = 50)]
     public class Combination : ScriptableObject
     {
+        [field: SerializeField] public float MaximumDetectionDistance { get; set; } = 7.0f;
         [field: SerializeField] public TutorialType TutorialBehaviourType { get; set; } = TutorialType.None;
         [field: SerializeField] public FigureType TargetFigureType { get; set; } = FigureType.None;
         [field: SerializeField] public ProductType TargetProductsType { get; set; } = ProductType.Inedible;

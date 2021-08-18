@@ -59,7 +59,7 @@ namespace MadPot
 
         public void OnBeginDrag(PointerEventData eventData)
         {
-            //OnMouseDown(eventData.position);
+            OnMouseDown(eventData.position);
         }
 
         public void OnDrag(PointerEventData eventData)
@@ -86,7 +86,7 @@ namespace MadPot
 
         public void OnEndDrag(PointerEventData eventData)
         {
-            //OnMouseUp(eventData.position);
+            OnMouseUp(eventData.position);
         }
 
         public void OnInitializePotentialDrag(PointerEventData eventData)
@@ -134,14 +134,14 @@ namespace MadPot
 
             _spawner.HideAllOutlines();
 
-            if (result.Distance > 7)
+            if (result.Distance > _spawner.CurrentLevel.CurrentCombination.MaximumDetectionDistance)
             {
-                Debug.LogError($"Cannot recognize gesture - {result.Distance}");
+                //Debug.LogError($"Cannot recognize gesture - {result.Distance}");
                 _spawner.LevelFail();
                 return;
             }
 
-            Debug.Log($"{result.GestureName} - {result.Distance}");
+            //Debug.Log($"{result.GestureName} - {result.Distance}");
 
             _spawner.LevelComplete();
         }

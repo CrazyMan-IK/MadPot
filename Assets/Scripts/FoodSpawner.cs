@@ -62,7 +62,7 @@ namespace MadPot
                 {
                     product.transform.DOKill();
                     product.transform.DOScale(Vector3.zero, 1.0f).SetEase(Ease.OutQuad);
-                    product.transform.DOMove(_productsHolder.position, 2.0f).SetEase(Ease.OutQuad).SetUpdate(true);
+                    product.transform.DOMove(_productsHolder.position, 1.0f).SetEase(Ease.OutQuad).SetUpdate(true);
                     product.transform.DORotateQuaternion(URandom.rotation, 2.0f).SetEase(Ease.OutQuad);
                 }
                 else
@@ -173,7 +173,7 @@ namespace MadPot
             }
 
 #if !UNITY_EDITOR || DISABLE_EDITOR_RESTRICTIONS
-            if (PlayerPrefs.HasKey("product-" + CurrentLevel.CurrentCombination.TargetProductsType.ToString()))
+            //if (PlayerPrefs.HasKey("product-" + CurrentLevel.CurrentCombination.TargetProductsType.ToString()))
 #endif
             if (CurrentLevel.CurrentCombination.TargetProductsType != ProductType.Edible)
             {
