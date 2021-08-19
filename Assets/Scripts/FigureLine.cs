@@ -13,6 +13,7 @@ namespace MadPot
     {
         [SerializeField] private FoodSpawner _spawner = null;
         [SerializeField] private HandPointer _hand = null;
+        [SerializeField] private bool _useHand = false;
 
         private readonly List<Vector3> _points = new List<Vector3>();
         private LineRenderer _renderer = null;
@@ -26,6 +27,7 @@ namespace MadPot
             _spawner.LevelWinned += OnLevelWinned;
             _spawner.LevelRestarted += OnLevelRestarted;
 
+            _hand.gameObject.SetActive(_useHand);
             _hand.MouseDown += OnMouseDown;
             _hand.MouseUp += OnMouseUp;
         }
@@ -59,6 +61,11 @@ namespace MadPot
 
         public void OnBeginDrag(PointerEventData eventData)
         {
+            if (_useHand)
+            {
+                return;
+            }
+            
             OnMouseDown(eventData.position);
         }
 
@@ -86,6 +93,11 @@ namespace MadPot
 
         public void OnEndDrag(PointerEventData eventData)
         {
+            if (_useHand)
+            {
+                return;
+            }
+
             OnMouseUp(eventData.position);
         }
 

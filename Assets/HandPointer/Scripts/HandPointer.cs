@@ -9,8 +9,7 @@ public class HandPointer : MonoBehaviour
 {
     [SerializeField] private float _distance = 10;
     [SerializeField] private Animator _animator;
-    [SerializeField] private float _clickDelay = 0.1f;
-    [SerializeField] private float _hitDelay = 0.1f;
+    [SerializeField] private float _speedMultiplier = 1f;
     [SerializeField] private Camera _camera;
     [SerializeField] private HandAnimatorEventListener _animationEvents;
 
@@ -126,7 +125,7 @@ public class HandPointer : MonoBehaviour
     {
         transform.position = _positionConverter.GetCursorPosition(mousePosition, _distance);
 
-        float speed = transform.position.x - _lastX;
+        float speed = (transform.position.x - _lastX) * _speedMultiplier;
         float right = 0.5f + speed * 1.5f;
 
         if (right - _lastRight > 0.02f)
